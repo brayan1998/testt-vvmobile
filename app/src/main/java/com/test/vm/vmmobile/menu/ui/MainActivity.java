@@ -3,6 +3,7 @@ package com.test.vm.vmmobile.menu.ui;
 import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -41,9 +42,7 @@ public class MainActivity extends PermisoActivity {
             @Override
             public void onPermissionResult(Permiso.ResultSet resultSet) {
                 if(resultSet.areAllPermissionsGranted()){
-                    /*Intent intent = new Intent(MainActivity.this, MainActivity.this);
-                    startActivity(intent);
-                    finish();*/
+                    Toast.makeText(getApplication(), "Se aceptaron los permisos con éxito", Toast.LENGTH_SHORT).show();
                 } else{
                     Permiso.getInstance().showRationaleInDialog(getString(R.string.label_base_informacion), getString(R.string.msg_base_permisos_inicio), null, new Permiso.IOnRationaleProvided() {
                         @Override

@@ -48,10 +48,7 @@ public abstract class BaseFragment <P extends BasePresenter> extends Fragment im
     public Context getContext() {
         return parentContext;
     }
-   /*
-   * onAttach(Context) is not called on pre API 23 versions of Android and onAttach(Activity) is deprecated
-   * Use onAttachToContext instead
-   */
+
     @TargetApi(23)
     @Override
     public final void onAttach(Context context) {
@@ -59,10 +56,6 @@ public abstract class BaseFragment <P extends BasePresenter> extends Fragment im
         onAttachToContext(context);
     }
 
-    /*
-     * Deprecated on API 23
-     * Use onAttachToContext instead
-     */
     @SuppressWarnings("deprecation")
     @Override
     public final void onAttach(Activity activity) {

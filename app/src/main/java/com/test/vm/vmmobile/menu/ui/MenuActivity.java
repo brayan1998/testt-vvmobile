@@ -18,7 +18,7 @@ import com.greysonparrelli.permiso.PermisoActivity;
 import com.test.vm.vmmobile.R;
 import com.test.vm.vmmobile.databinding.ActivityMainBinding;
 
-public class MainActivity extends PermisoActivity {
+public class MenuActivity extends PermisoActivity {
 
     private ActivityMainBinding binding;
 
@@ -42,7 +42,7 @@ public class MainActivity extends PermisoActivity {
             @Override
             public void onPermissionResult(Permiso.ResultSet resultSet) {
                 if(resultSet.areAllPermissionsGranted()){
-                    Toast.makeText(getApplication(), "Se aceptaron los permisos con éxito", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplication(), "Se aceptaron los permisos con éxito", Toast.LENGTH_SHORT).show();
                 } else{
                     Permiso.getInstance().showRationaleInDialog(getString(R.string.label_base_informacion), getString(R.string.msg_base_permisos_inicio), null, new Permiso.IOnRationaleProvided() {
                         @Override

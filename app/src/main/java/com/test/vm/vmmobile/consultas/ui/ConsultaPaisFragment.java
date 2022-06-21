@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.test.vm.vmmobile.R;
-import com.test.vm.vmmobile.consultas.model.remote.response.PaisSearch;
 import com.test.vm.vmmobile.consultas.presenter.ConsultaPaisPresenter;
 import com.test.vm.vmmobile.consultas.ui.adapter.PaisAdapter;
 import com.test.vm.vmmobile.consultas.ui.dialogs.ModalDetallePaisDialog;
@@ -53,7 +52,7 @@ public class ConsultaPaisFragment extends BaseFragment<ConsultaPaisPresenter> im
 
     @Override
     public int getLayoutId() {
-        return R.layout.fragment_dashboard;
+        return R.layout.fragment_pais;
     }
 
 

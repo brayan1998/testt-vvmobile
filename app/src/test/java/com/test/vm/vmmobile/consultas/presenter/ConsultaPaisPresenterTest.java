@@ -7,8 +7,7 @@ public class ConsultaPaisPresenterTest {
 
     private ConsultaPaisPresenter consultaPaisPresenter;
 
-
-    //TODO ESO ESTA BUENO NO HAY NECESIDAD DE PROBARLO ;)
+    //TODO
     @Test
     public void init() {
     }

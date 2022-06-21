@@ -1,11 +1,9 @@
 package com.test.vm.vmmobile.consultas.util;
 
-import com.test.vm.vmmobile.consultas.model.remote.response.PEN;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Optional;
 
 public class Pais implements Serializable{
 

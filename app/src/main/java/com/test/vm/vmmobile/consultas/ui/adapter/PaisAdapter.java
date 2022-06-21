@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,7 +17,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class PaisAdapter extends RecyclerView.Adapter<PaisAdapter.PaisViewHolderViewHolder> {
 
@@ -103,8 +101,8 @@ public class PaisAdapter extends RecyclerView.Adapter<PaisAdapter.PaisViewHolder
         }
     }
     public void clearData() {
-        listaPais.clear(); // clear list
-       notifyDataSetChanged(); // let your adapter know about the changes and reload view.
+        listaPais.clear();
+       notifyDataSetChanged();
     }
 
 }

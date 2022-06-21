@@ -18,7 +18,7 @@ import com.test.vm.vmmobile.consultas.util.Pais;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
+
 
 public class ModalDetallePaisDialog  extends DialogFragment {
 
@@ -47,11 +47,7 @@ public class ModalDetallePaisDialog  extends DialogFragment {
             currencieList.add(paisInfo.getCurrencies().get(key));
         }
 
-        System.out.println(currencieList.get(0).getName().toString());
-        System.out.println(currencieList.get(0).getSymbol().toString());
-
         textViewCurrencie.setText(currencieList.get(0).getName().toString() + "  (" + currencieList.get(0).getSymbol().toString() + ")" );
-
         if(paisInfo.getCapital() != null || paisInfo.getLatlng() !=null || paisInfo.getFlags().getPng() != null
                 || paisInfo.getTimezones()!=null || paisInfo.getName().getCommon() !=null) {
             textViewCapital.setText(paisInfo.getCapital().get(0));

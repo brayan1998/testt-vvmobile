@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VMMobile</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Listado de Paises</string>
+    <string name="title_notifications">Acerca de</string>
+
+    <string name="msg_base_cargando">Cargando...</string>
+    <string name="label_base_informacion">Información</string>
+    <string name="msg_base_permisos_inicio">Se deben aceptar los permisos para ejecutar la aplicación</string>
+</resources>
